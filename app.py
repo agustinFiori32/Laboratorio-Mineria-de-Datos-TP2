@@ -18,8 +18,10 @@ def predict():
         data = request.get_json()
         features = np.array(data['features']).reshape(1, -1)
 
-        
-        prediction = model.predict(features)[0]
+        if model is None:
+            return jsonify({'error': 'Modelo no cargado'}), 500
+
+        prediction = model.predict(features)[0] 
 
         return jsonify({
             'prediction': prediction
