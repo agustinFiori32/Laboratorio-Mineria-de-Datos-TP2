@@ -13,10 +13,10 @@ cd tu-repositorio
 ---
 
 ## URL de la API:
-https://random-forest-app-64633b1cf975.herokuapp.com/
+https://random-forest-app.com/predict
 
 ## Ejemplo de POST al Endpoint `/predict`:
-- URL: http://127.0.0.1:5000/predict
+- URL: https://random-forest-app.com/predict
 - Método: POST
 - Body (JSON):
   {
